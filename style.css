@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+:root {
+    --green: #00FF00;
+    --white: white;
+    --black: #000000;
+}
+
+* {
+    color: var(--fontColor);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+header {
+    padding: 5px 20px 20px 5px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    list-style-type: circle;
+}
+
+li .lista {
+    list-style-type: square;
+}
+
+button.btn {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(57, 56, 56);
+    background-color: rgb(201, 199, 199);
+    font-weight: bolder;
+    display: block;
+    margin: 10px auto;
+    border-radius: 15px;
+    padding: 20px 30px;
+    box-shadow: 5px 3px 3px rgb(201, 199, 199);
+    border: none;
+}
+
+button:hover {
+    color: rgb(57, 56, 56);
+    background-color: rgb(201, 199, 199);
+    transition: 2s;
+    box-shadow: 5px 3px 3px rgb(201, 199, 199);
+    font-weight: bolder;
+}
+
+.light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+}
